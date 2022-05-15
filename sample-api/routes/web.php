@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TodoListController;
 use App\Http\Controllers\TodoController;
 use App\Http\Controllers\TodoUpdateController;
+use App\Http\Controllers\TodoDeleteController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,3 +25,4 @@ Route::get('/', function () {
 Route::get('todo/', TodoListController::class);
 Route::get('todo/detail/', TodoController::class);
 Route::post('todo/detail/', TodoUpdateController::class);
+Route::delete('todo/detail/', TodoDeleteController::class);
