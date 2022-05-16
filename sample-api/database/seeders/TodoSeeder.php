@@ -20,7 +20,7 @@ class TodoSeeder extends Seeder
                 'id' => $i,
                 'title' => Str::random(10).'の作業',
                 'contents' => Str::random(10).'の内容',
-                'dead_line' => '2022/02/0'.$i,
+                'deadline' => '2022/02/0'.$i,
                 'complate' => false,
             ]);
         }

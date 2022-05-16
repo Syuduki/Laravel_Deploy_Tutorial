@@ -17,7 +17,7 @@ class CreateTodoTable extends Migration
             $table->id();
             $table->string("title");
             $table->string("contents");
-            $table->string("dead_line");
+            $table->string("deadline");
             $table->boolean("complate");
         });
     }

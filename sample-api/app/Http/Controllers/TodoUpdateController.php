@@ -19,7 +19,7 @@ class TodoUpdateController extends Controller
     {
         try {
             DB::beginTransaction();
-            $usecase($request->id, $request->title, $request->contents, $request->deadLine, $request->complate);
+            $usecase($request->id, $request->title, $request->contents, $request->deadline, $request->complate);
             DB::commit();
             return response()->json(["data" => [], "mesages" => __("messages.success")]);
         } catch (\Exception $e) {

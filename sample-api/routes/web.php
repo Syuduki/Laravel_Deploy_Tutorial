@@ -24,5 +24,5 @@ Route::get('/', function () {
 
 Route::get('todo/', TodoListController::class);
 Route::get('todo/detail/', TodoController::class);
-Route::post('todo/detail/', TodoUpdateController::class);
+Route::put('todo/detail/', TodoUpdateController::class);
 Route::delete('todo/detail/', TodoDeleteController::class);
