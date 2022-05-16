@@ -5,12 +5,12 @@ namespace App\Http\Usecase\Todo;
 use App\Models\Todo;
 
 class TodoUpdateUsecase {
-  public function __invoke($id, $title, $contents, $deadLine, $complate)
+  public function __invoke($id, $title, $contents, $deadline, $complate)
   {
     Todo::where('id',$id)->Update([
       'title' => $title,
       'contents' => $contents,
-      'dead_line' => $deadLine,
+      'deadline' => $deadline,
       'complate' => $complate,
     ]);
   }
